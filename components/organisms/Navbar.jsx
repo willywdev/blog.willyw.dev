@@ -40,7 +40,16 @@ function Navbar() {
           <CustomLink href='/category/php'>PHP</CustomLink>
         </li>
       </NavbarLinks>
-      <NavbarLinks caption='Socials'></NavbarLinks>
+      <NavbarLinks caption='Socials'>
+        <li className='flex items-center gap-1.5'>
+          <Icon icon='akar-icons:github-fill' width='18' />
+          <CustomLink href=''>Github</CustomLink>
+        </li>
+        <li className='flex items-center gap-1.5'>
+          <Icon icon='akar-icons:x-fill' width='18' />
+          <CustomLink href=''>Twitter</CustomLink>
+        </li>
+      </NavbarLinks>
     </nav>
   );
 }

@@ -1,6 +1,6 @@
 function ColoredCaption({ children }) {
   return (
-    <span className='text-pink-300 underline underline-offset-4'>
+    <span className='text-lg underline text-cyan-100 underline-offset-2'>
       {children}
     </span>
   );
