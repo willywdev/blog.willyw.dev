@@ -6,20 +6,20 @@ import { Icon } from "@iconify/react";
 
 function Navbar() {
   return (
-    <nav className='fixed top-0 right-0 flex w-full gap-32 p-8 mt-20 text-lg shadow-2xl bg-zinc-900 -z-10'>
-      <NavbarLinks caption='Links'>
+    <nav className='fixed top-0 right-0 flex justify-center w-full gap-32 p-8 mt-20 text-lg shadow-2xl bg-neutral-900 -z-10'>
+      <NavbarLinks caption='Blog'>
         <li>
           <CustomLink href='/'>Home</CustomLink>
         </li>
         <li>
+          <CustomLink href='/latest'>Latest</CustomLink>
+        </li>
+      </NavbarLinks>
+      <NavbarLinks caption='Links'>
+        <li>
           <CustomLink href='https://willyw.dev' target='_blank'>
             Portfolio
           </CustomLink>
-        </li>
-      </NavbarLinks>
-      <NavbarLinks caption='Blog'>
-        <li>
-          <CustomLink href='/latest'>Latest</CustomLink>
         </li>
       </NavbarLinks>
       <NavbarLinks caption='Learn with me'>
