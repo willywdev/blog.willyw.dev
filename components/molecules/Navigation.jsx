@@ -2,9 +2,9 @@ import HamburgerMenu from "../atoms/HamburgerMenu";
 
 function Navigation() {
   return (
-    <nav className='absolute top-8 right-8'>
+    <section className='absolute top-5 right-5'>
       <HamburgerMenu />
-    </nav>
+    </section>
   );
 }
 
