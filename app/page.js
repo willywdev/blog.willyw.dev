@@ -1,5 +1,7 @@
+import Header from "@/components/organisms/Header";
+
 function Home() {
-  return <h1>Hello World!</h1>;
+  return <Header />;
 }
 
 export default Home;
