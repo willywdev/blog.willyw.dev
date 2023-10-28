@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@formkit/auto-animate": "^0.8.0",
     "geist": "^1.0.0",
     "million": "latest",
     "next": "14.0.0",
