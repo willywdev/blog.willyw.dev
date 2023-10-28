@@ -6,7 +6,7 @@ import { Icon } from "@iconify/react";
 
 function Navbar() {
   return (
-    <nav className='fixed top-0 right-0 flex justify-center w-full gap-32 p-8 mt-20 text-lg shadow-2xl bg-neutral-900 -z-10'>
+    <nav className='fixed top-0 right-0 flex flex-col items-start w-full gap-8 p-8 mt-20 text-lg shadow-2xl bg-neutral-900 -z-10 md:gap-32 md:flex-row md:justify-center'>
       <NavbarLinks caption='Blog'>
         <li>
           <CustomLink href='/'>Home</CustomLink>
