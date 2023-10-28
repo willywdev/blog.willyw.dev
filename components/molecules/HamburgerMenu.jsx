@@ -4,8 +4,7 @@ import Hamburger from "hamburger-react";
 import { useEffect, useState } from "react";
 import autoAnimate from "@formkit/auto-animate";
 import { useRef } from "react";
-import NavbarLinks from "./NavbarLinks";
-import CustomLink from "../atoms/CustomLink";
+import Navbar from "../organisms/Navbar";
 
 function HamburgerMenu() {
   const [isOpen, setOpen] = useState(false);
@@ -26,18 +25,7 @@ function HamburgerMenu() {
           label='show menu'
         />
       </div>
-      {isOpen && (
-        <NavbarLinks caption='Links'>
-          <li>
-            <CustomLink href='/'>Home</CustomLink>
-          </li>
-          <li>
-            <CustomLink href='https://willyw.dev' target='_blank'>
-              Portfolio
-            </CustomLink>
-          </li>
-        </NavbarLinks>
-      )}
+      {isOpen && <Navbar />}
     </div>
   );
 }
