@@ -1,14 +1,10 @@
-import { slide as Menu } from "react-burger-menu";
-import Link from "next/link";
+import HamburgerMenu from "../atoms/HamburgerMenu";
 
 function Navigation() {
   return (
-    <Menu>
-      <Link href=''>Home</Link>
-      <Link href=''>Socials</Link>
-      <Link href=''>Topics</Link>
-      <Link href=''>Portfolio</Link>
-    </Menu>
+    <nav className='absolute top-8 right-8'>
+      <HamburgerMenu />
+    </nav>
   );
 }
 
