@@ -9,7 +9,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' className={GeistSans.className}>
-      <body className='mt-14 text-zinc-100 bg-zinc-950'>{children}</body>
+      <body className=' text-zinc-100 bg-zinc-950'>{children}</body>
     </html>
   );
 }

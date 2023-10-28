@@ -1,13 +1,11 @@
 import Headline from "../atoms/Headline";
-import Subheadline from "../atoms/Subheadline";
-import Navigation from "../molecules/Navigation";
+import HamburgerMenu from "../molecules/HamburgerMenu";
 
 function Header() {
   return (
-    <header className='flex flex-col items-center justify-center'>
-      <Navigation />
-      <Subheadline>willyw.dev's</Subheadline>
-      <Headline>Blog</Headline>
+    <header className='flex items-center justify-between h-20 px-4'>
+      <Headline>willyw.dev's Blog</Headline>
+      <HamburgerMenu />
     </header>
   );
 }
