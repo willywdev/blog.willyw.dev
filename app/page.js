@@ -1,7 +1,5 @@
-import Header from "@/components/organisms/Header";
+import Header from "@/components/Header";
 
-function Home() {
+export default function Home() {
   return <Header />;
 }
-
-export default Home;
