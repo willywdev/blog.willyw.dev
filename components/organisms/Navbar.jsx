@@ -43,7 +43,9 @@ function Navbar() {
       <NavbarLinks caption='Socials'>
         <li className='flex items-center gap-1.5'>
           <Icon icon='akar-icons:github-fill' width='18' />
-          <CustomLink href=''>Github</CustomLink>
+          <CustomLink href='https://github.com/willywdev' target='_blank'>
+            Github
+          </CustomLink>
         </li>
         <li className='flex items-center gap-1.5'>
           <Icon icon='akar-icons:x-fill' width='18' />
