@@ -10,7 +10,8 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang='en' supresshydrationwarning='true'>
-      <body className={GeistSans.className}>
+      <body
+        className={`${GeistSans.className} bg-zinc-950 min-h-screen font-light text-lg`}>
         <ThemeProvider
           attribute='class'
           defaultTheme='dark'
