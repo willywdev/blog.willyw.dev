@@ -4,7 +4,8 @@ import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
 import ThemedLink from "./ThemedLink";
-import MobileNavbar from "./MobileNavbar";
+import Navbar from "./Navbar";
+import NavbarItems from "./NavbarItems";
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -22,10 +23,16 @@ function Header() {
         variant='outline'
         size='icon'
         aria-label='open navigation menu'
-        onClick={handleNavbar}>
+        onClick={handleNavbar}
+        className='md:hidden'>
         <Menu />
       </Button>
-      {navbarOpen && <MobileNavbar handleNavbar={handleNavbar} />}
+      {navbarOpen && (
+        <Navbar handleNavbar={handleNavbar} className='md:hidden' />
+      )}
+      <nav className='hidden md:flex'>
+        <NavbarItems isDesktop />
+      </nav>
     </header>
   );
 }
