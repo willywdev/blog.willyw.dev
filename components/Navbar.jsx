@@ -11,9 +11,9 @@ function Navbar({ handleNavbar }) {
 
   return (
     <div
-      className='fixed top-0 left-0 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm bg-blend-darken'
+      className='fixed top-0 left-0 z-50 w-full h-full bg-black bg-opacity-50 backdrop-blur-sm bg-blend-darken'
       onClick={handleOuterClick}>
-      <nav className='fixed top-0 right-0 w-3/4 h-screen px-10 py-20 text-right border-l bg-zinc-950 border-zinc-700 animate-nav-open'>
+      <nav className='fixed top-0 right-0 w-3/4 h-screen px-10 py-20 text-right border-l z-60 bg-zinc-950 border-zinc-700 animate-nav-open'>
         <Button
           variant='outline'
           size='icon'
