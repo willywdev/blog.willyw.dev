@@ -3,8 +3,8 @@
 import { Menu } from "lucide-react";
 import { Button } from "./ui/button";
 import { useState } from "react";
-import Navbar from "./Navbar";
 import ThemedLink from "./ThemedLink";
+import MobileNavbar from "./MobileNavbar";
 
 function Header() {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -25,7 +25,7 @@ function Header() {
         onClick={handleNavbar}>
         <Menu />
       </Button>
-      {navbarOpen && <Navbar handleNavbar={handleNavbar} />}
+      {navbarOpen && <MobileNavbar handleNavbar={handleNavbar} />}
     </header>
   );
 }
