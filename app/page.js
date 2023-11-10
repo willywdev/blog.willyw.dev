@@ -1,3 +1,20 @@
+import getPostMetadata from "@/lib/getPostMetadata";
+
+getPostMetadata("/posts");
+
 export default function Home() {
-  return <p>Lorem</p>;
+  const metaData = getPostMetadata();
+  const posts = metaData.map((slug) => {
+    return (
+      <li>
+        <a href={`/posts/${slug}`}>{slug}</a>
+      </li>
+    );
+  });
+  return (
+    <>
+      <h1>Latest Blog Posts</h1>
+      <ul>{posts}</ul>
+    </>
+  );
 }
