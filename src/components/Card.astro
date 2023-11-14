@@ -1,0 +1,21 @@
+---
+const { color, text, url } = Astro.props;
+---
+
+<a href={url}>
+  <article
+    class='flex justify-between items-center gap-7 p-4 rounded-xl w-full shadow-xl'>
+    <slot />
+  </article>
+</a>
+
+<style scoped define:vars={{ color, text }}>
+  article {
+    background-color: var(--color);
+    color: var(--text);
+  }
+  a {
+    all: unset;
+    cursor: pointer;
+  }
+</style>

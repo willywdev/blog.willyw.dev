@@ -1,0 +1,41 @@
+---
+import Rust from "../icons/Rust.astro";
+import React from "../icons/React.astro";
+import Javascript from "../icons/Javascript.astro";
+import Card from "./Card.astro";
+---
+
+<section class='flex justify-evenly items-center mb-10 gap-10'>
+  <Card color='#f0db4f' text='#323330' url='/blog/javascript'>
+    <Javascript />
+    <div class='flex flex-col justify-center items-end'>
+      <h5 class='text-[#323330]'>JavaScript</h5>
+      <p class='text-base text-right'>Learn with me</p>
+    </div>
+  </Card>
+  <Card color='#e43717' url='/blog/rust'>
+    <Rust />
+    <div class='flex flex-col justify-center items-end'>
+      <h5>Rust</h5>
+      <p class='text-base text-right'>Learn with me</p>
+    </div>
+  </Card>
+  <Card color='#61dafb' text='#202020' url='/blog/react'>
+    <React />
+    <div class='flex flex-col justify-center items-end'>
+      <h5 class='text-[#202020]'>React</h5>
+      <p class='text-base text-right'>Learn with me</p>
+    </div>
+  </Card>
+</section>
+
+<style scoped>
+  p {
+    margin: 0;
+    padding: 0;
+  }
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+</style>
