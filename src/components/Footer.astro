@@ -3,9 +3,11 @@ const today = new Date();
 ---
 
 <footer>
-  &copy; {today.getFullYear()} willywdev. All rights reserved.
+  <p class='social-links'>
+    &copy; {today.getFullYear()} willywdev. All rights reserved.
+  </p>
   <div class='social-links'>
-    <a href='https://m.webtoo.ls/@astro' target='_blank'>
+    <a href='https://www.linkedin.com/in/wilhelm-w-00a682280/' target='_blank'>
       <span class='sr-only'>Follow Willy on LinkedIn</span>
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -47,7 +49,7 @@ const today = new Date();
         ></svg
       >
     </a>
-    <a href='https://twitter.com/astrodotbuild' target='_blank'>
+    <a href='https://twitter.com/willywdev' target='_blank'>
       <span class='sr-only'>Follow Willy on Twitter</span>
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -95,7 +97,7 @@ const today = new Date();
         ></svg
       >
     </a>
-    <a href='https://github.com/withastro/astro' target='_blank'>
+    <a href='https://github.com/willywdev' target='_blank'>
       <span class='sr-only'>Go to Willy's GitHub repo</span>
       <svg
         xmlns='http://www.w3.org/2000/svg'
@@ -161,12 +163,32 @@ const today = new Date();
     padding: 2em 1em 6em 1em;
     color: #fafafa;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px
+      ),
+      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, #202020 1px);
+    background-size: 20px 20px;
+  }
+  footer::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#202020 10%, transparent 100%);
+    z-index: 1;
   }
   .social-links {
     display: flex;
     justify-content: center;
     gap: 1em;
     margin-top: 1em;
+    z-index: 99;
+    position: relative;
   }
   .social-links a {
     text-decoration: none;

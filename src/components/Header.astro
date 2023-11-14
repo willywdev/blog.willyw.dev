@@ -1,6 +1,7 @@
 ---
 import HeaderLink from "./HeaderLink.astro";
 import { SITE_TITLE } from "../consts";
+import Icon from "astro-icon";
 ---
 
 <header>
@@ -10,11 +11,15 @@ import { SITE_TITLE } from "../consts";
       <HeaderLink href='/'>Home</HeaderLink>
       <HeaderLink href='/blog'>Blog</HeaderLink>
       <HeaderLink href='https://willyw.dev' target='_blank'>
-        Portfolio
+        <span class='external-link'
+          >Portfolio <Icon name='gg:external' width='18' /></span
+        >
       </HeaderLink>
     </div>
     <div class='social-links'>
-      <a href='https://m.webtoo.ls/@astro' target='_blank'>
+      <a
+        href='https://www.linkedin.com/in/wilhelm-w-00a682280/'
+        target='_blank'>
         <span class='sr-only'>Follow Willy on LinkedIn</span>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -60,7 +65,7 @@ import { SITE_TITLE } from "../consts";
           ></svg
         >
       </a>
-      <a href='https://twitter.com/astrodotbuild' target='_blank'>
+      <a href='https://twitter.com/willywdev' target='_blank'>
         <span class='sr-only'>Follow Willy on Twitter</span>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -108,7 +113,7 @@ import { SITE_TITLE } from "../consts";
           ></svg
         >
       </a>
-      <a href='https://github.com/withastro/astro' target='_blank'>
+      <a href='https://github.com/willywdev' target='_blank'>
         <span class='sr-only'>Go to Willy's GitHub repo</span>
         <svg
           xmlns='http://www.w3.org/2000/svg'
@@ -175,6 +180,7 @@ import { SITE_TITLE } from "../consts";
     margin: 0;
     padding: 0 1em;
     background: #202020;
+    border-bottom: 1px solid #191919;
     box-shadow: 0 2px 8px rgba(var(--black), 5%);
   }
   h2 {
@@ -209,5 +215,11 @@ import { SITE_TITLE } from "../consts";
     .social-links {
       display: none;
     }
+  }
+
+  .external-link {
+    display: flex;
+    align-items: flex-start;
+    gap: 1px;
   }
 </style>
