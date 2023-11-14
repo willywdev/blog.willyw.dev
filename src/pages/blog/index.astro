@@ -92,6 +92,7 @@ const posts = (await getCollection("blog")).sort(
     <main transition:animate='slide'>
       <Categories />
       <section>
+        <h3 class='mb-4'>Latest Posts</h3>
         <ul>
           {
             posts.map((post) => (
