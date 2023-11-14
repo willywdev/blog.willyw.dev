@@ -1,0 +1,63 @@
+---
+import BaseHead from "../components/BaseHead.astro";
+import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
+import { SITE_TITLE, SITE_DESCRIPTION } from "../consts";
+---
+
+<!doctype html>
+<html lang='en'>
+  <head>
+    <BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+  </head>
+  <body>
+    <Header title={SITE_TITLE} />
+    <main transition:animate='slide'>
+      <h1
+        class='text-transparent bg-clip-text bg-gradient-to-r from-accent to-comp'>
+        Hello, Debuggers!
+      </h1>
+      <p>
+        Join me on my coding journey where I share what I'm learning about
+        JavaScript, web development, and Rust. I'll also toss in some handy tips
+        to make coding easier. Whether you're a pro or just starting, let's
+        explore the world of programming together!
+      </p>
+      <h2 class='mt-8'>About me</h2>
+      <p>
+        Hey, I'm Willy, a passionate Software Developer currently diving into
+        the vast ocean of web development.
+      </p>
+      <p>
+        Throughout my coding adventures, I'm here to share not just the
+        victories but also the pitfalls, hoping to make the coding journey
+        smoother for fellow enthusiasts.
+      </p>
+      <p>
+        <span class='text-accent underline underline-offset-4'
+          >Current Focus:</span
+        > Currently enrolled in a web development bootcamp, sharpening my skills
+        in JavaScript, and exploring the wonders of Rust.
+      </p>
+      <p>
+        <span class='text-accent underline underline-offset-4'
+          >Learning Journey:</span
+        > [On a quest to become proficient in TypeScript, seeking to add another
+        powerful tool to my developer toolkit.]
+      </p>
+      <p>
+        <span class='text-accent underline underline-offset-4'
+          >Favorite Stack:</span
+        > Astro + TailwindCSS + React
+      </p>
+      <p>
+        Join me on this coding odyssey, and let's make the web a better place
+        one line of code at a time! If you wan't to know more about me, <a
+          href='https://willyw.dev'
+          target='_blank'>visit my Portfolio</a
+        >.
+      </p>
+    </main>
+    <Footer />
+  </body>
+</html>
