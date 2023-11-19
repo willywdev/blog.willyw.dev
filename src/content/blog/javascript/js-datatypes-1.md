@@ -2,7 +2,7 @@
 title: "JavaScript Datatypes and Structures I"
 description: "Learn with me about JavaScript Datatypes and how to declare variables"
 pubDate: "Nov 19 2023"
-heroImage: "/js-datatypes.png"
+heroImage: "/js-datatypes-1.png"
 category: "javascript"
 ---
 
@@ -20,6 +20,8 @@ foo = 21;
 bar = "Goodbye";
 //--Output: TypeError: Assignment to constant variable.
 ```
+
+In old JavaScript Days we were declaring variables with the `var`-Keyboard. This is outdated and should not be used anymore.
 
 ## Dynamic and Weak Typing
 
