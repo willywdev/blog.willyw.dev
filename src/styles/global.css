@@ -53,7 +53,7 @@ h4,
 h5,
 h6 {
   margin: 0 0 0.5rem 0;
-  color: #fafafa;
+  color: #06d6a0;
   line-height: 1.2;
 }
 h1 {
@@ -113,6 +113,7 @@ pre {
   padding: 1.5em;
   border-radius: 8px;
   font-family: "Geist Mono";
+  margin-bottom: 1em;
 }
 pre > code {
   all: unset;
@@ -122,6 +123,7 @@ blockquote {
   padding: 0 0 0 20px;
   margin: 0px;
   font-size: 1.333em;
+  margin-bottom: 1em;
 }
 hr {
   border: none;
