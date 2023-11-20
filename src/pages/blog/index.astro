@@ -93,26 +93,22 @@ const posts = await getCollection("blog");
         <h3 class='mb-4'>Latest Posts</h3>
         <ul>
           {
-            posts
-              .sort(
-                (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf()
-              )
-              .map((post) => (
-                <li>
-                  <a href={`/blog/${post.slug}/`}>
-                    <img
-                      width={720}
-                      height={360}
-                      src={post.data.heroImage}
-                      alt=''
-                    />
-                    <h4 class='title'>{post.data.title}</h4>
-                    <p class='date'>
-                      <FormattedDate date={post.data.pubDate} />
-                    </p>
-                  </a>
-                </li>
-              ))
+            posts.reverse().map((post) => (
+              <li>
+                <a href={`/blog/${post.slug}/`}>
+                  <img
+                    width={720}
+                    height={360}
+                    src={post.data.heroImage}
+                    alt=''
+                  />
+                  <h4 class='title'>{post.data.title}</h4>
+                  <p class='date'>
+                    <FormattedDate date={post.data.pubDate} />
+                  </p>
+                </a>
+              </li>
+            ))
           }
         </ul>
       </section>

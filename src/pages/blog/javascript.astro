@@ -97,6 +97,7 @@ const whichPage = Astro.url.pathname.replace("/blog/", "");
           {
             posts
               .filter((post) => post.data.category?.includes(whichPage))
+              .reverse()
               .map((post) => (
                 <li>
                   <a href={`/blog/${post.slug}/`}>
