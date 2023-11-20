@@ -2,8 +2,10 @@
 title: "JavaScript Datatypes and Structures I"
 description: "Learn with me about JavaScript Datatypes and how to declare variables"
 pubDate: "Nov 19 2023"
-heroImage: "/js-datatypes-1.png"
+heroImage: "/javascript/js-datatypes-1.png"
 category: "javascript"
+readingTime: "2:57 min."
+next: "/blog/javascript/js-datatypes-2"
 ---
 
 ## Declaring Variables

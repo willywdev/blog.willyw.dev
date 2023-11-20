@@ -2,8 +2,11 @@
 title: "JavaScript Datatypes and Structures II"
 description: "Learn with me about complex JavaScript Datatypes and Prototype methods."
 pubDate: "Nov 19 2023"
-heroImage: "/js-datatypes-2.png"
+heroImage: "/javascript/js-datatypes-2.png"
 category: "javascript"
+readingTime: "2:09 min."
+previous: "/blog/javascript/js-datatypes-1"
+next: "/blog/javascript/js-oop-1"
 ---
 
 ## Keyed Collections: Maps & Sets
