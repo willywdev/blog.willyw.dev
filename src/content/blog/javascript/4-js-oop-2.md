@@ -5,7 +5,8 @@ pubDate: "Nov 20 2023"
 heroImage: "/javascript/js-oop-2.png"
 category: "javascript"
 readingTime: "5:02 min."
-previous: "/blog/javascript/js-oop-1"
+previous: "/blog/javascript/3-js-oop-1"
+next: "/blog/javascript/5-js-operators-conditions-loops"
 ---
 
 ## Classes in JavaScript

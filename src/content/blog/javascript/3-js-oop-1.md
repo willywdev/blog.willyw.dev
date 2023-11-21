@@ -5,8 +5,8 @@ pubDate: "Nov 20 2023"
 heroImage: "/javascript/js-oop-1.png"
 category: "javascript"
 readingTime: "1:36 min."
-previous: "/blog/javascript/js-datatypes-2"
-next: "/blog/javascript/js-oop-2"
+previous: "/blog/javascript/2-js-datatypes-2"
+next: "/blog/javascript/4-js-oop-2"
 ---
 
 In this article we will learn the basics / fundamentals of Objected Oriented Programming.

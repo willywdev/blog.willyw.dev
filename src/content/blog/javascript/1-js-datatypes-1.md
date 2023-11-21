@@ -5,7 +5,7 @@ pubDate: "Nov 19 2023"
 heroImage: "/javascript/js-datatypes-1.png"
 category: "javascript"
 readingTime: "2:57 min."
-next: "/blog/javascript/js-datatypes-2"
+next: "/blog/javascript/2-js-datatypes-2"
 ---
 
 ## Declaring Variables
