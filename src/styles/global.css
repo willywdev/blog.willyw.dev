@@ -129,6 +129,13 @@ hr {
   border: none;
   border-top: 3px solid var(--accent);
 }
+ul {
+  margin-bottom: 1em;
+}
+
+li {
+  list-style-type: disc;
+}
 @media (max-width: 720px) {
   body {
     font-size: 18px;
