@@ -1,10 +1,10 @@
 ---
 title: "JavaScript Operators, Conditions & Loops"
 description: "Explore the Essentials of JavaScript: Operators, Conditions, Loops, Functions, and Recursion. Dive into this comprehensive guide demystifying key concepts in JavaScript programming. Unlock the power of operators, master conditional statements, harness the potential of loops, understand the functionality of functions, and delve into the elegance of recursion. Elevate your coding prowess with this insightful blog post!"
-pubDate: "Nov 21 2023"
+pubDate: "Nov 22 2023"
 heroImage: "/javascript/js-operators-conditions-loops.png"
 category: "javascript"
-readingTime: "5:02 min."
+readingTime: "2:16 min."
 previous: "/blog/javascript/4-js-oop-2"
 next: "/blog/javascript/6-js-functions-recursion"
 ---
